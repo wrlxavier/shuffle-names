@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/stylePage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rancho&family=Syne+Mono&display=swap" rel="stylesheet"> 
+    <title>Sorteador</title>
+</head>
+<body>
+    <section class="wrapp title">
+        <div>
+            <h1>
+                <p>
+                    Sorteador
+                </p>
+            </h1>
+        </div>
+        <div>
+            <h2>
+                <p id="secondaryText">
+                    Digite os nomes que deseja sortear, separados por vírgula, e clique em "sortear".
+                </p>
+            </h2>
+        </div>
+        <div id="input" class="inputElements wrapp">
+            <textarea  name="textcontent" id="inputText" cols="30" rows="10" placeholder="Ex: João, Maria, José..."></textarea>
+            <button type="button" id="button1" onclick="shuffle();" >sortear</button>
+        </div>
+        <div id="result" class="result hidden wrapp">
+            <p id="textCard" class="wrapp"></p>
+            <button type="button" id="button2" onclick="newShuffle();">Novo Sorteio</button>
+        </div>
+    </section>
+</body>
+<script type="text/javascript" src="./javascript/shuffle.js"></script>
+</html>
